@@ -18,4 +18,4 @@ async def join(req: Request):
 
 @member_router.get("/myinfo", response_class=HTMLResponse)
 async def myinfo(req: Request):
-    return templates.TemplateResponse('member/myinfo.html', {'request': req})
+    return templates.TemplateResponse('member/modify.html', {'request': req})
