@@ -5,7 +5,38 @@
     <title>세미프로젝트</title>
 </head>
 <body>
-    <h1>세미프로젝트 - 본문글</h1>
-
+    <div id="wrap">
+        <header><h1>세미프로젝트 - 본문글</h1></header>
+        <nav><ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/member/join">회원가입</a></li>
+            <li><a href="/member/login">로그인</a></li>
+            <li><a href="/board/list">게시판</a></li>
+            <li><a href="/member/myinfo">회원정보</a></li>
+        </ul>
+            <hr>
+        </nav>
+        <main>
+            <h2>본문글</h2>
+            <table border="0" cellpadding="5">
+                <tr><td>제 목</td><td>시간은 금이라구 제목</td></tr>
+                <tr><td>작성자</td><td>dangdang</td></tr>
+                <tr><td>작성일</td><td>2024-07-30 15:17:50</td></tr>
+                <tr>
+                    <td>본문</td>
+                    <td><textarea rows="20" cols="50">시간은 친구라구 내용</textarea></td>
+                </tr>
+                <tr><td colspan="2">
+                    <button type="button" id="listbtn" onclick="location.href='/board/list'">리스트로</button>
+                    <button type="button" id="mdfbtn" onclick="location.href='/board/modify'">수정하기</button>
+                    <button type="button" id="rmvbtn">삭제하기</button>
+                </td></tr>
+            </table>
+        </main>
+        <footer>
+            <hr>
+            <p>copyright &copy; 2024. dangdang. all rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
