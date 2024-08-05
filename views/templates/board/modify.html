@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>세미프로젝트</title>
     <link rel="stylesheet" href="/static/css/project.css" >
+    <style>
+        form { width: 450px;
+            margin: 50px auto; }
+        th { width: 150px; }
+        tr { height: 35px }
+        tr:nth-child(3) { vertical-align: top }
+        #listbtn { margin-left: 53px }
+        input, textarea, button { padding: 5px }
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -20,7 +29,7 @@
         <main>
             <h2>본문글 수정</h2>
             <form name="modifyfrm" method="post">
-                <table border="0" cellpadding="5">
+                <table>
                     <tr><td>제 목</td><td><input type="text" name="title" id="title" value="시간은 금이라구, 친구!"></td></tr>
                     <tr><td>작성자</td><td><input type="text" name="userid" id="userid" value="dangdang" readonly></td></tr>
                     <tr>
